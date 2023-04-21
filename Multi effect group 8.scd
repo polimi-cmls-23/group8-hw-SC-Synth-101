@@ -60,7 +60,7 @@ SynthDef(\flanger, {
 }).add;
 
 
-//f = Synth.new(\flanger,[\input_bus, s.options.numOutputBusChannels, \output_bus,~bout,\bypassf,0]);
+
 
 
 
