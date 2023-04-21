@@ -92,7 +92,7 @@ SynthDef(\outputAudioStereo,{ //send audio to the speakers (we use this after th
 
 )
 
-//w = Synth(\wahWah,[\input_bus, s.options.numOutputBusChannels, \output_bus,~bout]);
+
 
 
 
