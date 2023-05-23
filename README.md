@@ -7,18 +7,25 @@
  ![Time visualization](https://github.com/MarcoPelazza/Synth101/blob/main/time.jpeg)
  
  <h3>Phaser</h3>
- <div>Frequency knob: Frequency of a sinusoidal wave that modulates the delay of an all-pass filter.</div>
- <div>Dry/wet knob: Sets how heavy the phaser effect is with respect to the input signal.</div>
+ <ul>
+ <li>Frequency knob: Frequency of a sinusoidal wave that modulates the delay of an all-pass filter.</li>
+ <li>Dry/wet knob: Sets how heavy the phaser effect is with respect to the input signal.</li>
+ </ul>
  
  <h3>Flanger</h3>
- <div>Frequency knob: Controls the frequency of the LFO that influences the delay time</div>
- <div>Feedback knob: Sets the amount of feedback</div>
- <div>Width knob: Sets the amplitude of the LFO described before</div>
- <div>Dry/wet knob: Sets how heavy the flanger effect is with respect to the input signal</div>
+ <ul>
+ <li>Frequency knob: Controls the frequency of the LFO that influences the delay time</li>
+ <li>Feedback knob: Sets the amount of feedback</li>
+ <li>Width knob: Sets the amplitude of the LFO described before</li>
+ <li>Dry/wet knob: Sets how heavy the flanger effect is with respect to the input signal</li>
+ </ul>
+
+ 
  
  <h3>Wah wah</h3>
- <div>Frequency knob: Sets the frequency of the wah effect </div>
- <div>Dry/wet knob: Sets how heavy the wah wah effect is with respect to the input signal</div>
- 
+ <ul>
+ <li>Frequency knob: Sets the frequency of the wah effect </li>
+ <li>Dry/wet knob: Sets how heavy the wah wah effect is with respect to the input signal</li>
+ </ul> 
  <h3>General settings</h3>
  <p>It is possible to control the master volume, the pan and the overall ON/OFF from the respective knobs and button, whereas the arrows permit to swap pedal order.</p>
