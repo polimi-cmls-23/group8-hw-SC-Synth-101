@@ -32,7 +32,7 @@ SynthDef(\myphaser, {
 		phased_input = AllpassC.ar(phased_input, 0.2, SinOsc.kr(mod_freq, 0, 0.0015,0.005), 0);num=num-1});
 
 
-	output=Select.ar(bypassp,[Mix.ar([input*(1-depth),phased_input*depth]),input]); //do you want to bypass this pedal?
+	output=Select.ar(bypassp,[2*Mix.ar([input*(1-depth),phased_input*depth]),input]); //do you want to bypass this pedal?
 
 	Out.ar(output_bus,output); //write on output bus
 
@@ -59,7 +59,7 @@ SynthDef(\flanger, {
 	signal_xCycle2 = Mix.ar([signal_x*(1-gfb), signal_x_delayed*(gfb)]);
 	signal_x_delayed = DelayC.ar(signal_xCycle2, maxdelay,basedelay+ myLFO);
 
-	output=Select.ar(bypassf,[Mix.ar([signal_x_delayed*gff,signal_x*(1-gff)]),signal_x]);//do you want to bypass this pedal?
+	output=Select.ar(bypassf,[2*Mix.ar([signal_x_delayed*gff,signal_x*(1-gff)]),signal_x]);//do you want to bypass this pedal?
 
 	Out.ar(output_bus,output); //write on output bus
 
@@ -87,7 +87,7 @@ SynthDef(\wahWah,{
 
 
 
-	output=Select.ar(bypassw,[mix,input]); //do you want to bypass this pedal?
+	output=Select.ar(bypassw,[2*mix,input]); //do you want to bypass this pedal?
 
 
 	Out.ar(output_bus, output); //write on output bus
@@ -988,7 +988,7 @@ d = Array.fill(2, {
 // customize waveScope
 ~waveScope.style_(1)   // overlay channels
 .waveColors_([myColor2]).background_(Color.black)
-.xZoom_(1.7);   // scaling factors
+.xZoom_(1.7).yZoom_(7);   // scaling factors
 
 // customize phaseScope
 ~waveScope2.style_(1)   // overlay channels
